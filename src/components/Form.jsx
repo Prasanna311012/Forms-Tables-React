@@ -3,7 +3,7 @@ import React from "react";
 const Form=({formData,handleFormDataChange,handleSubmit,editIndex})=>{
     return(
         <>
-        <h1 className="text-2xl font-semibold mb-4 bg-green-200 rounded p-2">Forms and Tables</h1>
+        <h1 className="text-2xl font-semibold mb-4 bg-white rounded p-2">Forms and Tables</h1>
         <form className="border rounded-lg p-4 bg-teal-100" onSubmit={handleSubmit}>
             <input className="w-full p-2 border rounded mb-2" type="text" placeholder="Name" required
             value={formData.name}

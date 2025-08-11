@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className="p-6 mx-auto max-w-2xl">
+    <div className="p-6 mx-auto max-w-2xl bg-blue-300 mt-5 rounded shadow-xl">
       <Form formData={formData}
         handleFormDataChange={handleFormDataChange}
         handleSubmit={handleSubmit}
