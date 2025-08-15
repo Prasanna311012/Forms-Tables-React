@@ -5,8 +5,10 @@ const Table=({tableData,handleEdit,handleDelete})=>{
         <table className="w-full mt-6 border">
             <thead>
                 <tr className="bg-gray-100">
-                    <th className="border p-2">Name</th>
-                    <th className="border p-2">Email</th>
+                    <th className="border p-2">Task Name</th>
+                    <th className="border p-2">Description</th>
+                    <th className="border p-2">Date</th>
+                    <th className="border p-2">Status</th>
                     <th className="border p-2">Action</th>
                 </tr>
             </thead>
@@ -14,7 +16,9 @@ const Table=({tableData,handleEdit,handleDelete})=>{
                 return(
                 <tr key={index}>
                     <td className="border border-gray-300 bg-white px-4 py-2">{data.name}</td>
-                    <td className="border border-gray-300 bg-white px-4 py-2">{data.email}</td>
+                    <td className="border border-gray-300 bg-white px-4 py-2">{data.description}</td>
+                    <td className="border border-gray-300 bg-white px-4 py-2">{data.date}</td>
+                    <td className="border border-gray-300 bg-white px-4 py-2">{data.status}</td>
                     <td className="border border-gray-300 bg-white px-4 py-2">
                         <button className="bg-blue-500 text-white px-4 py-2 rounded"
                         onClick={()=>{

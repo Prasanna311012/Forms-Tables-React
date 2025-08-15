@@ -4,7 +4,9 @@ import Table from "./components/Table"
 function App() {
   const initialFormData = {
     name: "",
-    email: ""
+    description: "",
+    date:"",
+    status:""
   }
   const [formData, setFormData] = useState(initialFormData)
   const [tableData, setTableData] = useState([])
